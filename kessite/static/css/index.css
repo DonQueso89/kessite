@@ -1,15 +1,29 @@
-body {  
+.content-container {  
     background-color: #e6ffff;
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .main-links { 
     display: grid; 
     grid-template-colums: repeat(2, 500px);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 300px);
     grid-auto-flow: column;
     grid-gap: 10px;
-    grid-auto-rows: minmax(175px: auto);
-    grid-auto-columns: 800px, 1000px;
-    text-align: center;
     font-size: 200%;
+}
+
+.main-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.footer-link {
+    font-family: "Lucida Console", monospace;
+    text-align: center;
 }
