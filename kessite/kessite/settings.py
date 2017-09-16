@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'bupit.urls'
+ROOT_URLCONF = 'kessite.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'bupit.wsgi.application'
+WSGI_APPLICATION = 'kessite.wsgi.application'
 
 
 # Database
@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'bupit.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bupitdb',
-        'USER': 'bupit',
-        'PASSWORD': 'bupitapplogin',
+        'NAME': 'kessitedb',
+        'USER': 'kessite',
+        'PASSWORD': 'Il0veDATh1h1/',
         'HOST': '127.0.0.1',
         'PORT': '',
     }

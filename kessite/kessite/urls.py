@@ -17,5 +17,6 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
+    url('^/$', index.html),
     url(r'^admin/', admin.site.urls),
 ]
