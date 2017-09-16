@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <link rel="stylesheet", type="text/css", href={% static "/css/index.css" %}>
+    </head>
+    <body>
+        <div class="main-links">
+            {% for name in pages %}
+            <div class="main-link{{forloop.counter}}" >
+            <h4>
+                <a href={% url name %}>{{ name }}</a>
+            </h4>
+            </div>
+            {%  endfor %}
+        </div>
+    </body>
+</html>
